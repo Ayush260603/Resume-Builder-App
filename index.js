@@ -149,6 +149,11 @@ let reader= new FileReader(profilepic);
   reader.onloadend=function(){
    updateprofile.src=reader.result;
   }
+    //updating role 
+  let rolefield=document.getElementById("rolefield").value;
+  let updaterole=document.getElementById("role");
+
+  updaterole.innerHTML=rolefield;
 
 let container= document.getElementById("cv-form");
 let container2= document.getElementById("cv-template")
